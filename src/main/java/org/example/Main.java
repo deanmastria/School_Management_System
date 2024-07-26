@@ -9,12 +9,18 @@ public class Main {
         Teacher donnie = new Teacher(1, "Donnie", 2300);
         Teacher george = new Teacher(2, "George", 2000);
         Teacher isaac = new Teacher(3, "Isaac", 2000);
+        Teacher debbie = new Teacher(3, "Debbie", 2400);
+        Teacher lisa = new Teacher(3, "Lisa", 2200);
+        Teacher dejia = new Teacher(3, "Dejia", 2200);
 
         // Add teachers to the list
         List<Teacher> teacherList = new ArrayList<>();
         teacherList.add(donnie);
         teacherList.add(george);
         teacherList.add(isaac);
+        teacherList.add(debbie);
+        teacherList.add(lisa);
+        teacherList.add(dejia);
 
         // Create Students
         Student dean = new Student(1, "Dean", 10);
@@ -51,10 +57,10 @@ public class Main {
         Course science = new Course(102, "Science", george);
         Course english = new Course(103, "English", frank);
         Course history = new Course(104, "History", isaac);
-        Course art = new Course(105, "Art", donnie);
-        Course physicalEducation = new Course(106, "Physical Education", george);
+        Course art = new Course(105, "Art", debbie);
+        Course physicalEducation = new Course(106, "Physical Education", lisa);
         Course music = new Course(107, "Music", megan);
-        Course computerScience = new Course(108, "Computer Science", isaac);
+        Course computerScience = new Course(108, "Computer Science", dejia);
 
         // Enroll Students in Courses
         math.addStudent(dean);
@@ -100,6 +106,7 @@ public class Main {
         // Students pay fees
         dean.payFees(6000);
         devon.payFees(7000);
+        joe.payFees(8000);
         alice.payFees(5000);
         bob.payFees(6000);
         charlie.payFees(5000);
@@ -110,6 +117,9 @@ public class Main {
         donnie.receiveSalary(donnie.getSalary());
         george.receiveSalary(george.getSalary());
         isaac.receiveSalary(isaac.getSalary());
+        debbie.receiveSalary(debbie.getSalary());
+        lisa.receiveSalary(lisa.getSalary());
+        dejia.receiveSalary(dejia.getSalary());
         frank.receiveSalary(frank.getSalary());
         megan.receiveSalary(megan.getSalary());
 
@@ -123,8 +133,6 @@ public class Main {
         for (Teacher teacher : teacherList) {
             System.out.println(teacher);
         }
-        System.out.println(frank);
-        System.out.println(megan);
 
         // Output Student Fee Details
         System.out.println("\nStudent Fee Payment Details:");
