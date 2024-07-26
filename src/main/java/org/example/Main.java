@@ -9,9 +9,9 @@ public class Main {
         Teacher donnie = new Teacher(1, "Donnie", 2300);
         Teacher george = new Teacher(2, "George", 2000);
         Teacher isaac = new Teacher(3, "Isaac", 2000);
-        Teacher debbie = new Teacher(3, "Debbie", 2400);
-        Teacher lisa = new Teacher(3, "Lisa", 2200);
-        Teacher dejia = new Teacher(3, "Dejia", 2200);
+        Teacher debbie = new Teacher(4, "Debbie", 2400);
+        Teacher lisa = new Teacher(5, "Lisa", 2200);
+        Teacher dejia = new Teacher(6, "Dejia", 2200);
 
         // Add teachers to the list
         List<Teacher> teacherList = new ArrayList<>();
@@ -47,8 +47,8 @@ public class Main {
         School fphs = new School(teacherList, studentList);
 
         // Add new Teachers
-        Teacher frank = new Teacher(6, "Frank", 1900);
-        Teacher megan = new Teacher(7, "Megan", 2100);
+        Teacher frank = new Teacher(7, "Frank", 1900);
+        Teacher megan = new Teacher(8, "Megan", 2100);
         fphs.addTeacher(frank);
         fphs.addTeacher(megan);
 
